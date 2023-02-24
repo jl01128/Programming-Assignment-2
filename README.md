@@ -10,6 +10,7 @@ $ g++ -std=c++11 -pthread "nameOfFile".cpp
 $ ./a.out
 ```
 
+Set concerte numnber for N as GUEST_NUM
 
 # 1. Minotaurs's Birthday Party 
 
