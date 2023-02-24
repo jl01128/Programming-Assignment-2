@@ -73,7 +73,7 @@ int main(){
 
     std::cout << std::endl;
     std::cout << "Total count of guests who entered Laybrinth: " << counter << std::endl;
-    std::cout << "Time: " << time.count() << "s" << std::endl;
+    std::cout << "Time: " << time.count() << "ms" << std::endl;
 
 }
 
