@@ -29,7 +29,7 @@ int counter = 0;
 int currentThread;
 
 //function prototype
-void guestInLaybrinth(unsigned int threadInd);
+void guestInLaybrinth(int threadInd);
 void cupCakeChecker();
 int randNum(int min, int max);
 
@@ -51,11 +51,12 @@ int main(){
         threads[i] = std::thread(guestInLaybrinth, i);
     }
 
-
-    //continue to generate number until all guest have entered laybrinth
+    
+    //guests continue to enter laybrinth until all guests have entered it.
     while(counter < GUEST_NUM) {
         currentThread = randNum(0, GUEST_NUM);
     }
+    
     
 
     //join our threads
@@ -78,7 +79,7 @@ int main(){
 }
 
 //guests enter laybrinth function call
-void guestInLaybrinth(unsigned int threadInd) {
+void guestInLaybrinth(int threadInd) {
     
     //tracks the number of guests that have enter laybrinth
     while(counter < GUEST_NUM){

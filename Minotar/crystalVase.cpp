@@ -1,3 +1,7 @@
+//Jackie Lin 
+//COP4520 - CONCEPTS PARALLEL DISTRIBUTED
+// 02/22/2023
+
 #include <iostream>
 #include <array>
 #include <deque>
@@ -11,7 +15,7 @@
 #include <thread>
 
 //concrete number of guests
-#define GUEST_NUM 25
+#define GUEST_NUM 100
 
 //Sign on door stsatus
 enum Sign {
